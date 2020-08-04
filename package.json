@@ -1,0 +1,11 @@
+{
+  "name": "json-version-update",
+  "version": "1.0.0",
+  "description": "Auto update package.json version\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D",
+  "main": "autoupdate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Catalin Plesu",
+  "license": "ISC"
+}
