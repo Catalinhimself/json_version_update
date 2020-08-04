@@ -3,7 +3,7 @@ var major = 4, minor = 25;
 
 function Update() {
     fs.readFile('./package.json', (err, data) => {
-        if (err) throw err;
+        //if (err) throw err;
         //get the  jspn
         let package = JSON.parse(data);
         //get version
