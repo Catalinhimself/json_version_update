@@ -2,7 +2,7 @@ const fs = require('fs');
 var major = 4, minor = 25;
 
 function Update() {
-    fs.readFile('/package.json', (err, data) => {
+    fs.readFile('./package.json', (err, data) => {
         if (err) throw err;
         //get the  jspn
         let package = JSON.parse(data);
@@ -30,7 +30,7 @@ function Update() {
         package.version = version[0] + "." + version[1] + "." + version[2];
         console.log("package version : ", package.version);
         let update = JSON.stringify(package);
-        fs.writeFileSync('/package.json', update);
+        fs.writeFileSync('./package.json', update);
     });
 
 };
